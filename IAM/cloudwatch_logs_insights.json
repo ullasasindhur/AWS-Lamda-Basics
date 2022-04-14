@@ -1,0 +1,93 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "VisualEditor0",
+      "Effect": "Allow",
+      "Action": [
+        "logs:GetLogRecord",
+        "cloudwatch:PutMetricData",
+        "cloudwatch:GetMetricData",
+        "logs:GetLogDelivery",
+        "cloudwatch:DeleteAnomalyDetector",
+        "cloudwatch:ListMetrics",
+        "logs:ListLogDeliveries",
+        "cloudwatch:DescribeAnomalyDetectors",
+        "cloudwatch:DescribeAlarmsForMetric",
+        "logs:CancelExportTask",
+        "cloudwatch:ListDashboards",
+        "logs:DeleteLogDelivery",
+        "cloudwatch:PutAnomalyDetector",
+        "logs:DescribeQueryDefinitions",
+        "logs:DescribeResourcePolicies",
+        "logs:PutDestination",
+        "cloudwatch:GetMetricWidgetImage",
+        "logs:DescribeDestinations",
+        "logs:DescribeQueries",
+        "cloudwatch:DescribeInsightRules",
+        "logs:PutDestinationPolicy",
+        "logs:StopQuery",
+        "logs:TestMetricFilter",
+        "logs:DeleteDestination",
+        "logs:DeleteQueryDefinition",
+        "logs:PutQueryDefinition",
+        "cloudwatch:GetMetricStatistics",
+        "logs:CreateLogDelivery",
+        "applicationinsights:*",
+        "logs:DescribeExportTasks",
+        "logs:GetQueryResults",
+        "cloudwatch:ListMetricStreams",
+        "logs:UpdateLogDelivery"
+      ],
+      "Resource": "*"
+    },
+    {
+      "Sid": "VisualEditor1",
+      "Effect": "Allow",
+      "Action": [
+        "cloudwatch:*",
+        "logs:GetLogEvents",
+        "logs:PutSubscriptionFilter",
+        "logs:DeleteLogStream",
+        "logs:PutLogEvents"
+      ],
+      "Resource": [
+        "arn:aws:cloudwatch::135566327975:dashboard/*",
+        "arn:aws:cloudwatch:*:135566327975:insight-rule/*",
+        "arn:aws:cloudwatch:*:135566327975:metric-stream/*",
+        "arn:aws:cloudwatch:*:135566327975:alarm:*",
+        "arn:aws:logs:*:135566327975:destination:*",
+        "arn:aws:logs:*:135566327975:log-group:*:log-stream:*"
+      ]
+    },
+    {
+      "Sid": "VisualEditor2",
+      "Effect": "Allow",
+      "Action": [
+        "logs:ListTagsLogGroup",
+        "logs:DisassociateKmsKey",
+        "logs:DeleteSubscriptionFilter",
+        "logs:DescribeLogGroups",
+        "logs:UntagLogGroup",
+        "logs:DeleteLogGroup",
+        "logs:DescribeLogStreams",
+        "logs:DescribeSubscriptionFilters",
+        "logs:StartQuery",
+        "logs:DescribeMetricFilters",
+        "logs:CreateLogGroup",
+        "logs:CreateExportTask",
+        "logs:PutMetricFilter",
+        "logs:CreateLogStream",
+        "logs:DeleteMetricFilter",
+        "logs:TagLogGroup",
+        "logs:DeleteRetentionPolicy",
+        "logs:AssociateKmsKey",
+        "logs:FilterLogEvents",
+        "logs:PutSubscriptionFilter",
+        "logs:PutRetentionPolicy",
+        "logs:GetLogGroupFields"
+      ],
+      "Resource": "arn:aws:logs:*:135566327975:log-group:*"
+    }
+  ]
+}
